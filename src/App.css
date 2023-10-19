@@ -1,0 +1,84 @@
+:root {
+  --blue-dark: #1e6f9f;
+  --blue: #4ea8de;
+  --purple-dark: #5e60ce;
+  --purple: #8284fa;
+
+  --gray-700: #0d0d0d;
+  --gray-600: #1a1a1a;
+  --gray-500: #262626;
+  --gray-400: #333333;
+  --gray-300: #808080;
+  --gray-200: #d9d9d9;
+  --gray-100: #f2f2f2;
+  --danger: #e25858;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--gray-600);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.TaskContainer {
+  width: 736px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.headerNoTasks {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.NoTasksCalc {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.NoTasksCalc p {
+  color: var(--blue);
+  font-weight: 600;
+}
+.NoTasksCalc span {
+  background: var(--gray-400);
+  color: var(--gray-100);
+  border-radius: 999px;
+  padding: 2px 8px;
+}
+.ListTaskContainer {
+  display: flex;
+  padding: 64px 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  border-radius: 8px;
+  border-top: 1px solid var(--Grey-400, #333);
+}
+
+.tasksList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+}
+
+.ListTaskContainer p {
+  color: var(--gray-300);
+}
